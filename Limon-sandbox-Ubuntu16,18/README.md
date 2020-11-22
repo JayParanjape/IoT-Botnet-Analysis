@@ -1,6 +1,6 @@
 ### Installation and Configuration of Limon Sandbox on Ubuntu 18.04
 Limon is an opensource sandbox written in python by KA Monnappa. It performs static, dynamic and memory analysis of Linux malware. One can download limon sandbox from this link: https://github.com/monnappa22/Limon.
-Limon internally depends on various opensource tools for the proper execution of malware. Some tools are installed on Host machines and some on virtual machine. It uses VMWare Workstation Pro for execution of malware on virtual machines. More details of this software can be found at :  https://cysinfo.com/setting-up-limon-sandbox-for-analyzing-linux-malwares/
+Limon internally depends on various opensource tools for the proper execution of malware.It uses VMWare Workstation Pro for execution of malware on analysis/ virtual machines. More details can be found at :  https://cysinfo.com/setting-up-limon-sandbox-for-analyzing-linux-malwares/
 This document provides detailed steps to install and configure Limon on Ubuntu 18.04 LTS. 
 ##### System Configuration of Host Machine is as follows:
 ###### Operating System: Ubuntu 18.04.5 LTS
