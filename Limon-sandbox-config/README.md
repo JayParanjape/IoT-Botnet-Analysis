@@ -1,6 +1,6 @@
 ### Installation and Configuration of Limon Sandbox on Ubuntu 18.04
 Limon is an opensource sandbox written in python by KA Monnappa. It performs static, dynamic and memory analysis of Linux malware. One can download limon sandbox from this link: https://github.com/monnappa22/Limon.
-Limon internally depends on various opensource tools for the proper execution of malware. Some tools are installed on Host machines and some on virtual machine. It uses VMWare Workstation Pro for execution of malware on virtual machines. More details of this software can be found at :  https://cysinfo.com/setting-up-limon-sandbox-for-analyzing-linux-malwares/
+Limon internally depends on various opensource tools for the proper execution of malware. It uses VMWare Workstation Pro for execution of malware on analysis machines. More details can be found at :  https://cysinfo.com/setting-up-limon-sandbox-for-analyzing-linux-malwares/
 This document provides detailed steps to install and configure Limon on Ubuntu 18.04 LTS. 
 ##### System Configuration of Host Machine is as follows:
 ###### Operating System: Ubuntu 18.04.5 LTS
@@ -18,7 +18,7 @@ This document provides detailed steps to install and configure Limon on Ubuntu 1
 	`bash VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle`
 - Enter serial number or leave blank for trial
 - Start VMWare Workstation and install virtual machine with Ubuntu 18/16 operating system
-Download yara version 3.110 from : 
+
 #### YARA
 - Download yara package version 3.110 from  https://github.com/virustotal/yara/releases/tag/v3.11.0
 - Install yara ( https://yara.readthedocs.io/en/stable/gettingstarted.html)
