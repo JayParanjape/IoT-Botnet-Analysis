@@ -18,10 +18,10 @@ This document provides detailed steps to install and configure Limon on Ubuntu 1
 	`bash VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle`
 - Enter serial number or leave blank for trial
 - Start VMWare Workstation and install virtual machine with Ubuntu 18/16 operating system
-Download yara version 3.110 from : 
+ 
 #### YARA
 - Download yara package version 3.110 from  https://github.com/virustotal/yara/releases/tag/v3.11.0
-- Install yara ( https://yara.readthedocs.io/en/stable/gettingstarted.html)
+- Install yara (https://yara.readthedocs.io/en/stable/gettingstarted.html)
 
 	`tar -zxf yara-4.0.0.tar.gz`
 
@@ -40,7 +40,7 @@ Download yara version 3.110 from :
 	`make install`
 
 #### SSDEEP
-- Install ssdeep ( https://zoomadmin.com/HowToInstall/UbuntuPackage/ssdeep)
+- Install ssdeep (https://zoomadmin.com/HowToInstall/UbuntuPackage/ssdeep)
 
 	`sudo apt-get update -y` 
 
