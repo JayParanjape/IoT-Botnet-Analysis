@@ -2,13 +2,13 @@
 Limon is an opensource sandbox written in python by KA Monnappa. It performs static, dynamic and memory analysis of Linux malware. One can download limon sandbox from this link: https://github.com/monnappa22/Limon.
 Limon internally depends on varuous opensource tools for the proper execution of malware. Some tools are installed on Host machines and some on virtual machine. It uses VMWare Workstation Pro for execution of malware on virtual machines. More details of this software can be found at :  https://cysinfo.com/setting-up-limon-sandbox-for-analyzing-linux-malwares/
 This document provides detailed steps to install and configure Limon on Ubuntu 18.04 LTS. 
-#####System Configuration of Host Machine is as follows:
-######Operating System: Ubuntu 18.04.5 LTS
-######Memory: 6 GB
-######Processor: Intel® Core™ i5-3210M CPU @ 2.50GHz × 4
+##### System Configuration of Host Machine is as follows:
+###### Operating System: Ubuntu 18.04.5 LTS
+###### Memory: 6 GB
+###### Processor: Intel® Core™ i5-3210M CPU @ 2.50GHz × 4
 
-###Steps for installation of tools on Host Machine:
-####Vmware Workstation Pro
+### Steps for installation of tools on Host Machine:
+#### Vmware Workstation Pro
 - Use this link https://www.vmware.com/in/products/workstation-pro/workstation-pro-evaluation.html to download Vmware Workstation 15.5 Pro. This is a paid software. Trial version is for 30 days
 - Install prerequisites 
 
@@ -19,7 +19,7 @@ This document provides detailed steps to install and configure Limon on Ubuntu 1
 - Enter serial number or leave blank for trial
 - Start VMWare Workstation and install virtual machine with Ubuntu 18/16 operating system
 Download yara version 3.110 from : 
-####YARA
+#### YARA
 - Download yara package version 3.110 from  https://github.com/virustotal/yara/releases/tag/v3.11.0
 - Install yara ( https://yara.readthedocs.io/en/stable/gettingstarted.html)
 
@@ -39,14 +39,14 @@ Download yara version 3.110 from :
 
 	`make install`
 
-####SSDEEP
+#### SSDEEP
 - Install ssdeep ( https://zoomadmin.com/HowToInstall/UbuntuPackage/ssdeep)
 
 	`sudo apt-get update -y` 
 
 	`sudo apt-get install -y ssdeep` 
 
-####SYSDIG
+#### SYSDIG
 - Install Sysdig (https://github.com/draios/sysdig/wiki/How-to-Install-Sysdig-for-Linux)
 
 	`curl -s https://s3.amazonaws.com/download.draios.com/DRAIOS-GPG-KEY.public | sudo apt-key add - ` 
@@ -55,14 +55,14 @@ Download yara version 3.110 from :
 
 	`sudo apt-get update`
 
-####INETSIM
+#### INETSIM
 - Install inetsim (https://www.howtoinstall.me/ubuntu/18-04/inetsim/)
  
  ` sudo apt update`
 	
 	`sudo apt install inetsim`
 
-####INSTALL FOLLOWING PACKAGES
+#### INSTALL FOLLOWING PACKAGES
 
 `sudo -H pip2 install openpyxl`
 
@@ -74,7 +74,7 @@ Download yara version 3.110 from :
 
 `sudo -H pip2 install pytz`    
 
-####VOLATILITY
+#### VOLATILITY
 - Install volalitity (https://github.com/volatilityfoundation/volatility/wiki/Installation#dependencies)
 
 	`git clone https://github.com/volatilityfoundation/volatility.git`
@@ -91,7 +91,7 @@ add `service_bind_address 172.16.185.1` #ip address for vnmet8
 
 `dns_default_ip 172.16.185.1`
 
-###Steps for installation of tools on Analysis Machine:
+### Steps for installation of tools on Analysis Machine:
 - Set Root password and enable graphical root login ()
 https://www.technhit.in/enable-root-user-ubuntu-16-04-1-lts/ )
 
@@ -103,19 +103,19 @@ https://www.technhit.in/enable-root-user-ubuntu-16-04-1-lts/ )
 
 Restart and login as root
 
-####PHP
+#### PHP
 
 `apt-get install php`
 
-####Install packages to run 32 bit executable on 64 bit Ubuntu system
+#### Install packages to run 32 bit executable on 64 bit Ubuntu system
 
 `dpkg --add-architecture i386`
 
-####Add default gateway 172.16.185.1 (VMNET8) to analysis machine
+#### Add default gateway 172.16.185.1 (VMNET8) to analysis machine
 
 `sudo route add default gw  172.16.185.1 eth0`
 
-####Install following packages 
+#### Install following packages 
 `sudo -H pip2 install openpyxl
 
 `sudo -H pip2 install ujson`
@@ -126,7 +126,7 @@ Restart and login as root
 
 `sudo -H pip2 install pytz`    
 
-####VOLATILITY
+#### VOLATILITY
 Install volalitity ( https://github.com/volatilityfoundation/volatility/wiki/Installation#dependencies)
 
 `git clone https://github.com/volatilityfoundation/volatility.git`
@@ -137,7 +137,7 @@ Install volalitity ( https://github.com/volatilityfoundation/volatility/wiki/Ins
 
 `python setup.py`
 
-####PREPARE LINUX PROFILE FOR ANALYSIS MACHINE
+#### PREPARE LINUX PROFILE FOR ANALYSIS MACHINE
 (https://github.com/volatilityfoundation/volatility/wiki/Linux)
 
 `apt-get install dwarfdump`
