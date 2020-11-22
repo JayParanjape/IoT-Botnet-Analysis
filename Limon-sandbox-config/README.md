@@ -154,3 +154,4 @@ Install volalitity ( https://github.com/volatilityfoundation/volatility/wiki/Ins
 
 `zip volatility/volatility/plugins/overlays/linux/Ubuntu1204.zip volatility/tools/linux/module.dwarf /boot/System.map-3.2.0-23-generic`
 
+Note: Refer to conf.py for the configuration of Limon Sandbox on Host machine.
